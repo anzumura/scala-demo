@@ -1,5 +1,7 @@
 package demo
 
+import scala.collection.mutable
+
 object Demo {
   def msort[T](xs: List[T])(less: (T, T) => Boolean): List[T] = {
     def merge(xs: List[T], ys: List[T]): List[T] = (xs, ys) match {
@@ -17,7 +19,9 @@ object Demo {
     }
   }
 
-  def main(s: Array[String]): Unit = {
-    println("start")
+  def countWords(s: String): Map[String, Int] = {
+    val result = mutable.Map[String, Int]().withDefaultValue(0)
+    s.split("[ !.,?]+").map(_.toLowerCase).foreach(result(_) += 1)
+    result.toMap
   }
 }

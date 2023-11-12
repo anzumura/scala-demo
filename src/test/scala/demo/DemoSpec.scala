@@ -35,4 +35,9 @@ class DemoSpec extends AnyFlatSpec with Matchers {
     val l = anyList()
     msort(l)(_ < _) shouldBe l.sorted
   }
+
+  it should "count words" in {
+    countWords("See Spot run, run Spot. Run!") shouldBe Map("see" -> 1,
+      "spot" -> 2, "run" -> 3)
+  }
 }
