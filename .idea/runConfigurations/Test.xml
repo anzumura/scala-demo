@@ -10,6 +10,7 @@
     <option name="classBuf">
       <list>
         <option value="demo.DemoSpec" />
+        <option value="demo.QueueSpec" />
       </list>
     </option>
     <option name="shortenClasspath" value="NONE" />
