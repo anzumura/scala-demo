@@ -11,6 +11,7 @@
       <list>
         <option value="demo.DemoSpec" />
         <option value="demo.QueueSpec" />
+        <option value="demo.RationalSpec" />
       </list>
     </option>
     <option name="shortenClasspath" value="NONE" />
