@@ -71,7 +71,7 @@ class RationalSpec extends AnyFlatSpec with Matchers {
     a * b shouldBe Rational(1, 3)
   }
 
-  it should "support multiplication with intergers" in {
+  it should "support multiplication with integers" in {
     Rational(2, 3) * 3 shouldBe Rational(2)
   }
 
@@ -81,7 +81,7 @@ class RationalSpec extends AnyFlatSpec with Matchers {
     a / b shouldBe Rational(4, 3)
   }
 
-  it should "support division with intergers" in {
+  it should "support division with integers" in {
     Rational(2, 3) / 3 shouldBe Rational(2, 9)
   }
 
