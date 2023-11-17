@@ -1,6 +1,6 @@
 package demo
 
-import scala.annotation.{tailrec, unused}
+import scala.annotation.tailrec
 import scala.language.implicitConversions
 
 final class Rational private(n: Int, d: Int) {
@@ -44,7 +44,6 @@ final class Rational private(n: Int, d: Int) {
     Rational(numer, denom * rhs)
   }
 
-  @unused // to suppress IntelliJ warning
   def unary_- : Rational = {
     Rational(-numer, denom)
   }
