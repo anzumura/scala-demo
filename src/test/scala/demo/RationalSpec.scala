@@ -87,7 +87,8 @@ class RationalSpec extends AnyFlatSpec with Matchers {
 
   it should "support unary minus" in {
     -Rational(2, 9) shouldBe Rational(-2, 9)
-    -Rational(-2, 7) shouldBe Rational(2, 7)
+    //noinspection PostfixUnaryOperation
+    Rational(-2, 7).unary_- shouldBe Rational(2, 7)
   }
 
   it should "support implicit conversion from integer" in {
